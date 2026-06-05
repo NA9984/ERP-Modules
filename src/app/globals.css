@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -23,4 +23,167 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ */
+
+
+
+ @import "tailwindcss";
+
+/* LIGHT */
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --border: #e2e8f0;
+}
+
+/* DARK */
+
+[data-theme="dark"] body {
+  background: black !important;
+  color: white !important;
+}
+
+/* CORPORATE BLUE */
+
+[data-theme="blue"] {
+  --bg: #eff6ff;
+  --card: #ffffff;
+  --text: #1e3a8a;
+  --border: #93c5fd;
+}
+
+/* EMERALD */
+
+[data-theme="emerald"] {
+  --bg: #ecfdf5;
+  --card: #ffffff;
+  --text: #065f46;
+  --border: #6ee7b7;
+}
+
+/* MIDNIGHT */
+
+[data-theme="midnight"] {
+  --bg: #020617;
+  --card: #0f172a;
+  --text: #f8fafc;
+  --border: #1e293b;
+}
+
+[data-theme="ocean"] {
+  --bg: #eef8ff;
+  --card: #ffffff;
+  --text: #0f4c75;
+  --border: #b9e6ff;
+}
+
+[data-theme="sage"] {
+  --bg: #f4f8f4;
+  --card: #ffffff;
+  --text: #47624f;
+  --border: #c9d8cb;
+}
+
+[data-theme="teal"] {
+  --bg: #eefcfb;
+  --card: #ffffff;
+  --text: #0f766e;
+  --border: #99f6e4;
+}
+
+[data-theme="coffee"] {
+  --bg: #faf6f1;
+  --card: #ffffff;
+  --text: #5c4033;
+  --border: #dbc7b7;
+}
+
+[data-theme="sand"] {
+  --bg: #fffaf2;
+  --card: #ffffff;
+  --text: #7c5e3c;
+  --border: #eddcb5;
+}
+
+[data-theme="frost"] {
+  --bg: #f8fbfd;
+  --card: #ffffff;
+  --text: #475569;
+  --border: #dbeafe;
+}
+
+[data-theme="sap"] {
+  --bg: #edf5ff;
+  --card: #ffffff;
+  --text: #003366;
+  --border: #b6d4fe;
+}
+
+[data-theme="navy"] {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e2e8f0;
+  --border: #475569;
+}
+
+[data-theme="executive"] {
+  --bg: #faf5ff;
+  --card: #ffffff;
+  --text: #6b21a8;
+  --border: #d8b4fe;
+}
+
+
+
+/* GLOBAL */
+
+html,
+body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+/* COMMON ERP CLASSES */
+
+.erp-page {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 5vh;
+}
+
+.erp-card {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.erp-header {
+  color: var(--text);
+}
+
+.erp-subtext {
+  opacity: 0.7;
+}
+
+.erp-table-header {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.erp-input {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.erp-modal {
+  background: var(--card);
+  color: var(--text);
 }
